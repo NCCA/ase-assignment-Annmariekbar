@@ -36,7 +36,7 @@ And the fish would also be very simple.
 I read into this [guide](http://bulletphysics.org/wordpress/) to start to understand Bullet Physics. This engine will be useful with my code as I would like to interact with other objects, meaning that I need a collision detection.
 
 
-####Algorithms for further insight:
+#### Algorithms for further insight:
 
 
 I found this section in "animation.py" on github, [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.
