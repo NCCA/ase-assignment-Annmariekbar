@@ -28,7 +28,7 @@ The tank would be a transparent simple cube shape like this:
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/thetank.jpg)
 
 
-*[photo sourced from here](https://www.istockphoto.com/photos/transparent-cube)*
+*photo [link](https://www.istockphoto.com/photos/transparent-cube) here*
 
 And the fish would also be very simple.
 
