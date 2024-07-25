@@ -120,7 +120,7 @@ Algorithms to note:
 
 
 ## Starting my code
-I wasn't completely sure on everything I wanted to do with this game, so I deicded to start with the basics, which was being abe to move the fish around.
+I wasn't completely sure on everything I wanted to do with this game, based on my research, there was a lot of gameplay I was missing such as a way to lose/win. I deicded to start with the basics, which was being abe to move the fish around.
 
 
 ### The basics
@@ -190,7 +190,7 @@ My algorithm to set the position:
 >}
 
 ### Changing the game objective & enemy class
-I no longer wanted the player to just interact with spheres, I wanted there to be ways to "lose" and "win" the game, so I  I also created an enemy class so that different enemies caused more damage.
+Now wanting a way to "lose" and "win" the game, I created an enemy class so that different enemies caused different types of damage.
 
 My enemy class:
 
