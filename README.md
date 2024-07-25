@@ -14,7 +14,7 @@ To explore:
 - 
 
 # Research
-![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
+![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)](https://www.moddb.com/games/fireboy-and-watergirl/videos/fireboy-and-watergirl-in-the-forest-temple)
 I studied Jon Macey's BulletNGL code as the physics engine would be useful with my code.
 
 Algorithms to note:
