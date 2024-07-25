@@ -36,7 +36,7 @@ I read into this [guide](http://bulletphysics.org/wordpress/) to start to unders
 
 
 #### Algorithms for further insight:
-
+I studied algorithms that were linked on the guide.
 
 I found this section in "animation.py" on github, *source [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.*
 
