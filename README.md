@@ -137,22 +137,39 @@ These are some more ideas on what my game should be able to do:
 After a lot of experimenting, this was my best algorithm for controlling the player character with a mouse
 
 >std::cout << "origx: " << m_win.origXPos << ", origy: " << m_win.origYPos << std::endl;
+>
 >std::cout << "winWidth: " << m_win.width <<  std::endl;
+>
 >//  int diffX = static_cast<int>(position.x() - m_win.origXPos);
+>
 >//  int diffY = static_cast<int>(position.y() - m_win.origYPos);
+>
 >float X;
+>
 >float Y;
+>
 >X = (static_cast<float>(position.x()));//-((static_cast<float>(m_win.width)/4));
+>
 >Y = -(static_cast<float>(position.y()));
+>
 >//  m_win.origXPos = position.x();
+>
 >//  m_win.origYPos = position.y();
+>
 >ngl::Vec3 fishPos= m_fish.getPosition();
+>
 >m_fish.setPosition( X*INCREMENT, Y*INCREMENT,0);
+>
 >//  m_fish.setPosition( fishPos.m_x += INCREMENT * diffX, fishPos.m_y-= INCREMENT * diffY,0);
+>
 >fishPos= m_fish.getPosition();
+>
 >m_physics->updateMeshPosition("apple", fishPos);
+>
 >std::cout << "Fish position - x: " << fishPos.m_x << ", y: " << fishPos.m_y << std::endl;
+>
 >std::cout << "Mouse position - x: " << position.x() << ", y: " << position.y() << std::endl;
+>
 >update();
 
 It still didn't have the results I wanted because the character model was always away from the mouse and the distance from the mouse widget changed due to the perspective of the scene; expanding the window made these effects worse. As this was taking too long, I decided to chnage tactic and use the WASD keys instead. This ended up being better and more immersive.
@@ -163,10 +180,15 @@ To make updating the position of the player charcater based on WASD easier, I de
 My algorithm to decrease the health:
 
 >bool Player::decreaseHealth(float dmge)
+>
 >{
+>
 >    health -= dmge;
+>
 >    if (health <= 0) return 0;
+>
 >    else return 1;
+>
 >};
 
 ### Changing the game objective & enemy class
@@ -175,17 +197,26 @@ I no longer wanted the player to just interact with spheres, I wanted there to b
 My enemy class:
 
 >// Constructor definition
+>
 >Enemy::Enemy(const std::string &name, float dmg, const ngl::Vec3 &col)
+>
 >        : name(name), damage(dmg), colour(col) {}
 >
+>
 >// Implementation of damage retrieval method
+>
 >float Enemy::getDmg() const {
+>
 >    return damage;
+>
 >}
 >
 >// Implementation of colour retrieval method
+>
 >ngl::Vec3 Enemy::getCol() const {
+>
 >    return colour;
+>
 >}
 
 ### Level class
