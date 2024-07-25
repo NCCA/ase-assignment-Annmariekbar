@@ -1,8 +1,7 @@
 
 # My Report
 
-## Annmarie Bartholomew Assignment
-## s5417041
+## Annmarie Bartholomew Assignment, s5417041
 
 ### Initial ideas
 I am creating a simple game, these are my initial ideas on what it should be able to do:
