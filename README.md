@@ -28,7 +28,7 @@ The tank would be a transparent simple cube shape like this:
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/thetank.jpg)
 
 
-*Photo [link](https://www.istockphoto.com/photos/transparent-cube) here.*
+*Photo source [link](https://www.istockphoto.com/photos/transparent-cube) here.*
 
 And the fish would also be very simple.
 
@@ -39,7 +39,7 @@ I read into this [guide](http://bulletphysics.org/wordpress/) to start to unders
 #### Algorithms for further insight:
 
 
-I found this section in "animation.py" on github, *[link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.*
+I found this section in "animation.py" on github, *source [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.*
 
 
 >scene.camera.position = (5.0, -5.8, 2.8)
@@ -50,7 +50,7 @@ I found this section in "animation.py" on github, *[link](https://github.com/goo
 
 
 
-I also found this section in "simulator.py" , *[link](https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.*
+I also found this section in "simulator.py" , *source [link](https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.*
 
 >scene = kb.Scene(resolution=(256, 256))
 >
