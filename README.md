@@ -2,8 +2,8 @@
 # s5417041
 
 # My Report
-I am creating a simple game
-Initial ideas -- What it should be able to do:
+# Initial ideas
+I am creating a simple game, these are my initial ideas on what it should be able to do:
 
 - the player move an object around the scene
 - interact with other objects in the scene
@@ -14,7 +14,7 @@ To explore:
 - 
 
 # Bullet Physics Engine research
-I studied Jon Macey's BulletNGL code as the physics engine would be useful with my code.
+I studied Jon Macey's ---- code and read into this [guide](http://bulletphysics.org/wordpress/) to start to understand Bullet Physics. This engine will be useful with my code as I would like to interact with other objects, meaning that I need a collision detection.
 
 Algorithms to note:
 
@@ -25,20 +25,19 @@ Algorithms to note:
 Fireboy Watergirl
 PLayer controls - WASD, arrow keys (Depending on if you're fire/water)
 
-Further ideas -- What it should be able to do:
+# Further ideas 
+These are some more ideas on what my game should be able to do:
 
 - use arrow keys to move the player character
 - have a level system, aim is to level up
 
 
-yes [guide](http://bulletphysics.org/wordpress/) of Bullet.
-
-Existing similar simple games:
+# Existing similar simple games:
 
 notes: these games WASD more often than the arrow keys, will make it easier for user to use WASD as it would be more familiar for a gamer
 
 
-Concluded ideas prior to coding:
+# Concluded ideas prior to coding:
 
 - use WASD to move player
 - space to jump
