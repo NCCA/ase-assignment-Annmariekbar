@@ -79,7 +79,7 @@ Research notes:
 
 #### game2
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
-
+https://www.friv.com/z/games/motox3mwinter/game.html
 Research notes:
 
 - Player controls - WASD, arrow keys (Depending on if you're fire/water)
