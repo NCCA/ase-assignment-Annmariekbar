@@ -112,11 +112,22 @@ Research notes:
   
 I studied Jon Macey's [BulletNGL code](https://github.com/NCCA/BulletNGL) as this had a wider implementation of the Bullet Physics.
 
-Algorithms to note:
+Jon Macey implements algorithms for rendering and for the camera, having access to this means I am able to focus more on coding the gameplay aspect rather than the technicalities of the scene.
 
->h
->
->y
+
+J. Macey's code for setting up the camera:
+
+
+>   ngl::Vec3 from(0.0f, 5.0f, 15.0f);
+> 
+>   ngl::Vec3 to(0.0f, 0.0f, 0.0f);
+> 
+>   ngl::Vec3 up(0.0f, 1.0f, 0.0f);
+> 
+> 
+>   m_view = ngl::lookAt(from, to, up);
+> 
+>   m_project = ngl::perspective(45.0f, 720.0f / 576.0f, 0.05f, 350.0f);
 
 
 ## Starting my code
