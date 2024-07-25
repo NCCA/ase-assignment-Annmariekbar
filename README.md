@@ -14,7 +14,7 @@ To explore:
 - 
 
 # Bullet Physics Engine research
-I studied Jon Macey's ---- code and read into this [guide](http://bulletphysics.org/wordpress/) to start to understand Bullet Physics. This engine will be useful with my code as I would like to interact with other objects, meaning that I need a collision detection.
+I read into this [guide](http://bulletphysics.org/wordpress/) to start to understand Bullet Physics. This engine will be useful with my code as I would like to interact with other objects, meaning that I need a collision detection.
 
 Algorithms to note:
 
