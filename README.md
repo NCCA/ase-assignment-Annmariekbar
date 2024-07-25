@@ -23,6 +23,7 @@ Algorithms for further insight:
 I found this section in "animation.py" on github, [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.
 
 scene.camera.position = (5.0, -5.8, 2.8)
+
 scene.camera.look_at((0.0, 0.0, 2.2))
 
 This section raised the importance of having a camera in my scene.
@@ -31,10 +32,15 @@ This section raised the importance of having a camera in my scene.
 I also found this section in "simulator.py" , [link](https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.
 
 scene = kb.Scene(resolution=(256, 256))
+
 scene.frame_end = 48   # < numbers of frames to render
+
 scene.frame_rate = 24  # < rendering framerate
+
 scene.step_rate = 240  # < simulation framerate
+
 renderer = KubricBlender(scene)
+
 simulator = KubricSimulator(scene)
 
 This is a way of implementing a scene and attaching important features, one being the frame rate which I didn't consider before.
