@@ -23,7 +23,7 @@ Algorithms for further insight:
 I found this section in "animation.py" on github, [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.
 
 scene.camera.position = (5.0, -5.8, 2.8)
-"scene.camera.look_at((0.0, 0.0, 2.2))
+scene.camera.look_at((0.0, 0.0, 2.2))
 
 This section raised the importance of having a camera in my scene.
 
