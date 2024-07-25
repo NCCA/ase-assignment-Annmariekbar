@@ -20,13 +20,13 @@ I read into this [guide](http://bulletphysics.org/wordpress/) to start to unders
 
 Algorithms for further insight:
 
-I found this section in "animation.py" on github, [link] (https://github.com/google-research/kubric/blob/main/examples/animation.py) here.
+I found this section in "animation.py" on github, [link](https://github.com/google-research/kubric/blob/main/examples/animation.py) here.
 "scene.camera.position = (5.0, -5.8, 2.8)
 scene.camera.look_at((0.0, 0.0, 2.2))"
 This section raised the importance of having a camera in my scene.
 
 
-I also found this section in "simulator.py" , [link] (https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.
+I also found this section in "simulator.py" , [link](https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.
 "# --- create scene and attach a renderer and simulator
 scene = kb.Scene(resolution=(256, 256))
 scene.frame_end = 48   # < numbers of frames to render
