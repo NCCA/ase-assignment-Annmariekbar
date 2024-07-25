@@ -120,18 +120,14 @@ Algorithms to note:
 
 
 ## Starting my code
-These are some more ideas on what my game should be able to do:
-
-- use arrow keys to move the player character
-- have a level system, aim is to level up
+I wasn't completely sure on everything I wanted to do with this game, so I deicded to start with the basics, which was being abe to move the fish around.
 
 
-### Concluded ideas prior to coding:
+### The basics
 
-- use WASD to move player
-- space to jump
-- collect an object to level up
-- win when reach a certain level
+- use mouse to move fish 
+- have this player character interact with other objects
+
 
 ### Changing from mouse control to WASD
 After a lot of experimenting, this was my best algorithm for controlling the player character with a mouse
@@ -175,7 +171,7 @@ After a lot of experimenting, this was my best algorithm for controlling the pla
 It still didn't have the results I wanted because the character model was always away from the mouse and the distance from the mouse widget changed due to the perspective of the scene; expanding the window made these effects worse. As this was taking too long, I decided to chnage tactic and use the WASD keys instead. This ended up being better and more immersive.
 
 ### Adding a player class
-To make updating the position of the player charcater based on WASD easier, I designed a player class. Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.
+To make the updating of the position of the player charcater easier, I designed a player class. Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.
 
 My algorithm to set the position:
 
@@ -274,6 +270,60 @@ Load map section of my level class:
 >
 >}
 
+
+### Collision detection
+I created a collision detected algorithm, with some help from ChatGPT, it distinguishes which shape is being hit and returns if there has been a collision with a sphere. I have a delayed timer so that it doesn't constant output "hit" in the terminal.
+
+
+> std::string PhysicsWorld::getCollision()
+> 
+> {
+> 
+>     --- code omission for simplicity ---
+> 
+> 
+>     auto now = std::chrono::steady_clock::now();
+> 
+>     bool collisionDetected = false;
+> 
+> 
+>     --- code omission for simplicity ---
+> 
+>     {
+> 
+>         auto elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - m_lastHitTime);
+> 
+>         if (elapsed >= m_hitInterval)
+> 
+>         {
+>             std::cout << "hit" << std::endl;
+> 
+>             m_lastHitTime = now; // Update the last hit time
+> 
+>         }
+> 
+>         return 1;
+> 
+>     }
+> 
+>     return 0;
+> 
+> }
+
+
+### Collision detection update
+The spheres were rendering the same colour as the main character, to avoid this, I stopped using "addSphere" for adding the enemies and instead uses "addMesh", this alongside other adjustments has made the collision detection inaccurate. On the other hand, the player character is now distinguishable! I also took away the delay timer in the collision detection algorithm and instead of returning if something was hit, I returned which shape has been hit, so that I was able to create different events based on what was hit.
+
+Section of collision detection code:
+
+>         else if ((nameA == "player" && nameB == "box") || (nameA == "teapot" && nameB == "box"))
+> 
+>         {
+> 
+>             return "box";
+> 
+>         }
+> 
 
 
 ## Successes and limitations
