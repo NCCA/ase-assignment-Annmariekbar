@@ -69,23 +69,32 @@ This is a way of implementing a scene and attaching important features, one bein
 #### Fireboy and Watergirl
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
 
+*click [here](https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple)) to play*
+
 Research notes:
 
-- Player controls - WASD, arrow keys (Depending on if you're fire/water)
+- Player controls - WAD, arrow keys (Depending on if you're fire/water)
 - Aim is to win individual levels
 - Win level by finding a diamond without dying (1 life)
 - If one charcater dies, it's over for the both of them
+- Dies by touching alternate property (fire/water)
 - Levels increase in difficulty
 
 #### Moto X3M Winter
+
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/moto_x3m_winter.png))
+
+
+
 *click [here](https://www.friv.com/z/games/motox3mwinter/game.html) to play*
+
 Research notes:
 
-- Player controls - WASD, arrow keys (Depending on if you're fire/water)
+- Player controls - WAD or arrow keys
+- R - restart
+- P - pause
 - Aim is to win individual levels
-- Win level by finding a diamond without dying (1 life)
-- If one charcater dies, it's over for the both of them
+- Win level by reaching end of path without dying (1 life)
 - Levels increase in difficulty
 
 ### More Bullet Physics Engine research
