@@ -16,7 +16,18 @@ To explore:
 
 So far, an idea is to have the player be a fish and it will interact with spheres in a tank, the player will move around using the mouse.
 The tank would be a transparent simple cube shape like this:
+
+
+
+
+
+
+
+
+
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/thetank.jpg)
+
+
 [photo sourced from here](https://www.istockphoto.com/photos/transparent-cube)
 
 And the fish would also be very simple.
