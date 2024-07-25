@@ -189,7 +189,7 @@ My algorithm to set the position:
 >
 >}
 
-### Changing the game objective & enemy class
+### Adding a game objective & enemy class
 Now wanting a way to "lose" and "win" the game, I created an enemy class so that different enemies caused different types of damage.
 
 My enemy class:
