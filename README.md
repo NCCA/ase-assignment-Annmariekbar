@@ -175,21 +175,23 @@ After a lot of experimenting, this was my best algorithm for controlling the pla
 It still didn't have the results I wanted because the character model was always away from the mouse and the distance from the mouse widget changed due to the perspective of the scene; expanding the window made these effects worse. As this was taking too long, I decided to chnage tactic and use the WASD keys instead. This ended up being better and more immersive.
 
 ### Adding a player class
-To make updating the position of the player charcater based on WASD easier, I designed a player class. Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.This player class also made the process of tracking the health easier.
+To make updating the position of the player charcater based on WASD easier, I designed a player class. Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.
 
-My algorithm to decrease the health:
+My algorithm to set the position:
 
->bool Player::decreaseHealth(float dmge)
+>void Player::setPosition(float x,float y,float z)
 >
 >{
 >
->    health -= dmge;
+>//    Sets position using the variables in the parameters
 >
->    if (health <= 0) return 0;
+>    Player::myPos.m_x = x;
 >
->    else return 1;
+>    Player::myPos.m_y = y;
 >
->};
+>    Player::myPos.m_z = z;
+>
+>}
 
 ### Changing the game objective & enemy class
 I no longer wanted the player to just interact with spheres, I wanted there to be ways to "lose" and "win" the game, so I  I also created an enemy class so that different enemies caused more damage.
@@ -219,8 +221,22 @@ My enemy class:
 >
 >}
 
+I also implemented a health tracker in my player class to enable "death":
+
+>bool Player::decreaseHealth(float dmge)
+>
+>{
+>
+>    health -= dmge;
+>
+>    if (health <= 0) return 0;
+>
+>    else return 1;
+>
+>};
+
 ### Level class
-I designed a level class to create a random "map" based on the difficulty of the level and the map dictated which shapes were going to be imported. I decided to get rid of the enemy class to focus more on the levels, but I did keep one enemy, being the "spheres".
+I designed a level class to create a random "map" based on the difficulty of the level and the map dictated which shapes were going to be imported. I decided to get rid of the enemy class to focus more on the levels, but I did keep one enemy being the "spheres".
 
 Load map section of my level class:
 
