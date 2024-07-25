@@ -17,13 +17,6 @@ So far, an idea is to have the player be a fish and it will interact with sphere
 The tank would be a transparent simple cube shape like this:
 
 
-
-
-
-
-
-
-
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/thetank.jpg)
 
 
@@ -116,7 +109,8 @@ Research notes:
 
 ### More Bullet Physics Engine research
   ![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
-I studied Jon Macey's BulletNGL code as this had a wider implementation of the Bullet Physics.
+  
+I studied Jon Macey's [BulletNGL code](https://github.com/NCCA/BulletNGL) as this had a wider implementation of the Bullet Physics.
 
 Algorithms to note:
 
@@ -140,12 +134,98 @@ These are some more ideas on what my game should be able to do:
 - win when reach a certain level
 
 ### Changing from mouse control to WASD
+After a lot of experimenting, this was my best algorithm for controlling the player character with a mouse
+
+>std::cout << "origx: " << m_win.origXPos << ", origy: " << m_win.origYPos << std::endl;
+>std::cout << "winWidth: " << m_win.width <<  std::endl;
+>//  int diffX = static_cast<int>(position.x() - m_win.origXPos);
+>//  int diffY = static_cast<int>(position.y() - m_win.origYPos);
+>float X;
+>float Y;
+>X = (static_cast<float>(position.x()));//-((static_cast<float>(m_win.width)/4));
+>Y = -(static_cast<float>(position.y()));
+>//  m_win.origXPos = position.x();
+>//  m_win.origYPos = position.y();
+>ngl::Vec3 fishPos= m_fish.getPosition();
+>m_fish.setPosition( X*INCREMENT, Y*INCREMENT,0);
+>//  m_fish.setPosition( fishPos.m_x += INCREMENT * diffX, fishPos.m_y-= INCREMENT * diffY,0);
+>fishPos= m_fish.getPosition();
+>m_physics->updateMeshPosition("apple", fishPos);
+>std::cout << "Fish position - x: " << fishPos.m_x << ", y: " << fishPos.m_y << std::endl;
+>std::cout << "Mouse position - x: " << position.x() << ", y: " << position.y() << std::endl;
+>update();
+
+It still didn't have the results I wanted because the character model was always away from the mouse and the distance from the mouse widget changed due to the perspective of the scene; expanding the window made these effects worse. As this was taking too long, I decided to chnage tactic and use the WASD keys instead. This ended up being better and more immersive.
 
 ### Adding a player class
-Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.
+To make updating the position of the player charcater based on WASD easier, I designed a player class. Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.This player class also made the process of tracking the health easier.
 
-### Adding a level system
+My algorithm to decrease the health:
 
+>bool Player::decreaseHealth(float dmge)
+>{
+>    health -= dmge;
+>    if (health <= 0) return 0;
+>    else return 1;
+>};
+
+### Changing the game objective & enemy class
+I no longer wanted the player to just interact with spheres, I wanted there to be ways to "lose" and "win" the game, so I  I also created an enemy class so that different enemies caused more damage.
+
+My enemy class:
+
+>// Constructor definition
+>Enemy::Enemy(const std::string &name, float dmg, const ngl::Vec3 &col)
+>        : name(name), damage(dmg), colour(col) {}
+>
+>// Implementation of damage retrieval method
+>float Enemy::getDmg() const {
+>    return damage;
+>}
+>
+>// Implementation of colour retrieval method
+>ngl::Vec3 Enemy::getCol() const {
+>    return colour;
+>}
+
+### Level class
+I designed a level class to create a random "map" based on the difficulty of the level and the map dictated which shapes were going to be imported. I decided to get rid of the enemy class to focus more on the levels, but I did keep one enemy, being the "spheres".
+
+Load map section of my level class:
+
+>std::map<int, obsData> Level::loadMap() {
+>
+>    mapData.clear(); // Clear existing data if any
+>
+>    for (int i = 1; i < obs; ++i) {
+>
+>        ngl::Vec3 pos;
+>
+>        std::string obj;
+>
+>        do {
+>
+>            pos = ngl::Random::getRandomVec3() * ngl::Vec3{3.0f, 3.0f, 3.0f};
+>
+>        }while (!isPositionValid(pos, mapData, minDistance));
+>
+>        int height = 1+ static_cast<int>(ngl::Random::randomPositiveNumber(maxHeight));
+>
+>        float randomNum = ngl::Random::randomPositiveNumber(1.0f); // Generate random number between 0 and 1
+>
+>        obj = (randomNum < 0.5f) ? "box" : "sphere";
+>
+>
+>
+>        mapData[i] = obsData{height, pos, obj};
+>
+>    }
+>
+>
+>
+>    return mapData;
+>
+>}
 
 
 
