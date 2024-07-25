@@ -14,7 +14,7 @@ To explore:
 - 
 
 # Research
-![alt tag][(https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)]
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
 I studied Jon Macey's BulletNGL code as the physics engine would be useful with my code.
 
 Algorithms to note:
