@@ -97,21 +97,21 @@ Research notes:
 - Win level by reaching end of path without dying (1 life)
 - Levels increase in difficulty
 
-  #### Moto X3M Winter
+  #### Bloons Tower Defence
 
-![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/moto_x3m_winter.png))
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/bloonstd.jpg)
 
 
 *Click [here](https://www.crazygames.com/game/bloons-tower-defense) to play*
 
 Research notes:
 
-- Player controls - WAD or arrow keys
-- R - restart
-- P - pause
+- Player controls - mouse clicks, drags and drops
 - Aim is to win individual levels
-- Win level by reaching end of path without dying (1 life)
+- Win level by reaching end without dying (40 lives)
 - Levels increase in difficulty
+- Earn money from victories
+- Buy resources with money to help with increasing difficulty
 
 
 ### More Bullet Physics Engine research
