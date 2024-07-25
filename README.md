@@ -339,6 +339,36 @@ Section of collision detection code:
 >         }
 > 
 
+### YOU DIED and YOU WON
+I added a "YOU DIED" and "YOU WON" text when these events occured. Initially, the simulation wasn't resetting when the character won, so the "YOU WON" text was plastered over the running game, but that was due to the placement of when the level was incremented. There was a lot of trial and error for centering these texts and I eventually was able to do it.
+
+YOU DIED code section:
+
+>       float sizeGameOver = static_cast<float>(width())*0.19f;
+> 
+>       m_gameState= std::make_unique<ngl::Text>("fonts/Arial.ttf", sizeGameOver);
+> 
+>       m_gameState->setScreenSize(width(), height());
+> 
+> 
+>       m_gameState->setColour(1, 1, 1);
+> 
+> 
+>       // Adjust text position to be centered
+> 
+>       std::string gameOverText = fmt::format("YOU DIED");
+> 
+>       float xPosGO = (static_cast<float>(width()) - (sizeGameOver*4.8)) / 2.0f;
+> 
+>       float yPosGO = static_cast<float>(height()) / 2.0f;
+> 
+> 
+>       m_gameState->renderText(xPosGO, yPosGO, gameOverText);
+
+
+### Level and health
+I also added the level and health number for the player to see (not just in the output terminal), I still haven't been able to fix the position issues with the text when resizing the window.
+
 
 ## Successes and limitations
 ### Successes
