@@ -65,22 +65,45 @@ I also found this section in "simulator.py" , *source [link](https://github.com/
 
 This is a way of implementing a scene and attaching important features, one being the frame rate which I didn't consider before.
 
-### Existing similar simple games:
+### Existing  simple games:
+#### Fireboy and Watergirl
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
 
-Fireboy Watergirl
-PLayer controls - WASD, arrow keys (Depending on if you're fire/water)
+Research notes:
 
-### Further ideas 
+- Player controls - WASD, arrow keys (Depending on if you're fire/water)
+- Aim is to win individual levels
+- Win level by finding a diamond without dying (1 life)
+- If one charcater dies, it's over for the both of them
+- Levels increase in difficulty
+
+#### game2
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
+
+Research notes:
+
+- Player controls - WASD, arrow keys (Depending on if you're fire/water)
+- Aim is to win individual levels
+- Win level by finding a diamond without dying (1 life)
+- If one charcater dies, it's over for the both of them
+- Levels increase in difficulty
+
+### More Bullet Physics Engine research
+  ![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
+I studied Jon Macey's BulletNGL code as this had a wider implementation of the Bullet Physics.
+
+Algorithms to note:
+
+>h
+>
+>y
+
+
+## Starting my code
 These are some more ideas on what my game should be able to do:
 
 - use arrow keys to move the player character
 - have a level system, aim is to level up
-
-
-### Existing similar simple games:
-
-notes: these games WASD more often than the arrow keys, will make it easier for user to use WASD as it would be more familiar for a gamer
 
 
 ### Concluded ideas prior to coding:
@@ -90,9 +113,35 @@ notes: these games WASD more often than the arrow keys, will make it easier for 
 - collect an object to level up
 - win when reach a certain level
 
-### More Bullet Physics Engine research
-  ![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
-I studied Jon Macey's BulletNGL code as this had a wider implementation of the Bullet Physics.
+### Changing from mouse control to WASD
 
-Algorithms to note:
+### Adding a player class
+Intially, I was going to have specifically a fish, but I changed my mind and want my class to be able to fit any model.
+
+### Adding a level system
+
+
+
+
+## Successes and limitations
+### Successes
+- I succesfully am able to move the character depending on the WASD keys
+- There is feedback when the player wins and loses
+- The game resets the levels and character when restarted
+- Damage is  applied when a collision with the enemy is detected
+- There is  no damage when other objects are collided with
+- It levels up when the teapot is found
+- Levels increase in difficulty further into the game
+- Instructions on how to play the game
+- Instructions disappear after level 1
+- Health bar shows how much health the player has
+
+### Limitations
+- The collision detection is faulty
+- The player isn't able to jump as the positon in the y axis is always set to 0.5
+- The WASD inputs are unaffected by the orientation of the scene so it may not go the right way relative to the camera
+- The "level" "instructions" and "health" labels don't always poition properly when modifying the window size
+- Simple criteria for the game, overall not the most interesting
+
+
 ```
