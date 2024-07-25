@@ -13,7 +13,10 @@ I am creating a simple game, these are my initial ideas on what it should be abl
 To explore:
 - how the user is going to be controlled (e.g. moving the mouse around)
 - objective of the game
-- 
+
+So far, my idea is to have the player be a fish and it will interact with spheres in a tank.
+
+[photo link here]https://www.istockphoto.com/photos/transparent-cube
 
 ### Bullet Physics Engine research
 I read into this [guide](http://bulletphysics.org/wordpress/) to start to understand Bullet Physics. This engine will be useful with my code as I would like to interact with other objects, meaning that I need a collision detection.
