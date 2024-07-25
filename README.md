@@ -44,6 +44,7 @@ I found this section in "animation.py" on github, *source [link](https://github.
 >scene.camera.position = (5.0, -5.8, 2.8)
 >
 >scene.camera.look_at((0.0, 0.0, 2.2))
+
 This section raised the importance of having a camera in my scene.
 
 
