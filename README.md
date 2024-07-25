@@ -203,6 +203,10 @@ My algorithm to set the position:
 >
 >}
 
+### No more tank
+I used the addMesh() function to add the tank into the scene, but the collision detection was not operating as expected as it gave the tank an invisible "lid", after some failed trials of creating a new collision detection algorithm for my tank, I decided to discard the idea.
+
+
 ### Adding a game objective & enemy class
 Now wanting a way to "lose" and "win" the game, I created an enemy class so that different enemies caused different types of damage.
 
