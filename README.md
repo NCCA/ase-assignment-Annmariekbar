@@ -69,7 +69,7 @@ This is a way of implementing a scene and attaching important features, one bein
 #### Fireboy and Watergirl
 ![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
 
-*click [here](https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple)) to play*
+*click [here](https://www.coolmathgames.com/0-fireboy-and-water-girl-in-the-forest-temple) to play*
 
 Research notes:
 
@@ -96,6 +96,23 @@ Research notes:
 - Aim is to win individual levels
 - Win level by reaching end of path without dying (1 life)
 - Levels increase in difficulty
+
+  #### Moto X3M Winter
+
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/moto_x3m_winter.png))
+
+
+*Click [here](https://www.crazygames.com/game/bloons-tower-defense) to play*
+
+Research notes:
+
+- Player controls - WAD or arrow keys
+- R - restart
+- P - pause
+- Aim is to win individual levels
+- Win level by reaching end of path without dying (1 life)
+- Levels increase in difficulty
+
 
 ### More Bullet Physics Engine research
   ![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
