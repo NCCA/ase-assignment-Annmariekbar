@@ -77,9 +77,9 @@ Research notes:
 - If one charcater dies, it's over for the both of them
 - Levels increase in difficulty
 
-#### game2
-![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
-https://www.friv.com/z/games/motox3mwinter/game.html
+#### Moto X3M Winter
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/moto_x3m_winter.png))
+*click [here](https://www.friv.com/z/games/motox3mwinter/game.html) to play*
 Research notes:
 
 - Player controls - WASD, arrow keys (Depending on if you're fire/water)
