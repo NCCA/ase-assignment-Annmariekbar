@@ -49,6 +49,8 @@ scene.camera.look_at((0.0, 0.0, 2.2))
 This section raised the importance of having a camera in my scene.
 
 
+
+
 I also found this section in "simulator.py" , [link](https://github.com/google-research/kubric/blob/main/examples/simulator.py) here.
 
 scene = kb.Scene(resolution=(256, 256))
