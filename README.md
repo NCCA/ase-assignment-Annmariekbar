@@ -13,14 +13,14 @@ To explore:
 - objective of the game
 - 
 
-# Research
-![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
+# Bullet Physics Engine research
 I studied Jon Macey's BulletNGL code as the physics engine would be useful with my code.
 
 Algorithms to note:
 
 
-Existing similar simple games:
+# Existing similar simple games:
+![alt tag](https://github.com/NCCA/ase-assignment-Annmariekbar/blob/main/fireboy-and-watergirl-in-the-forest-temple-full-walkthrough.mp4.jpg)
 
 Fireboy Watergirl
 PLayer controls - WASD, arrow keys (Depending on if you're fire/water)
@@ -45,6 +45,7 @@ Concluded ideas prior to coding:
 - collect an object to level up
 - win when reach a certain level
 
+# More Bullet Physics Engine research
   ![alt tag](http://nccastaff.bournemouth.ac.uk/jmacey/GraphicsLib/Demos/Bullet.png)
 I studied Jon Macey's BulletNGL code as this had a wider implementation of the Bullet Physics.
 
