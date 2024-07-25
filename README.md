@@ -130,6 +130,9 @@ J. Macey's code for setting up the camera:
 >   m_project = ngl::perspective(45.0f, 720.0f / 576.0f, 0.05f, 350.0f);
 
 
+I will use this BulletNGL code as a basis for the physics and scene set up in my game.
+
+
 ## Starting my code
 I wasn't completely sure on everything I wanted to do with this game, based on my research, there was a lot of gameplay I was missing such as a way to lose/win. I deicded to start with the basics, which was being abe to move the fish around.
 
