@@ -1,0 +1,38 @@
+#ifndef COLLISIONSHAPE_H_
+#define COLLISIONSHAPE_H_
+
+/// @brief simple class to store instances of bullet collision
+/// shapes this is a singleton so we only have one instance of
+/// each shape.
+///
+#include <bullet/btBulletDynamicsCommon.h>
+#include <unordered_map>
+#include <memory>
+#include <ngl/Types.h>
+#include <string>
+class CollisionShape
+{
+
+  public :
+    static CollisionShape *instance();
+    void addMesh(const std::string & _name, const std::string &_objFilePath);
+    void addTank(const std::string & _name);//, const std::string &_objFilePath);
+    void addPlayer(const std::string & _name, const std::string &_objFilePath);
+    void addSphere(const std::string & _name, ngl::Real _rad);
+    void addBox(const std::string & _name, ngl::Real _w, ngl::Real _h, ngl::Real _d);
+    void addCapsule(const std::string & _name, ngl::Real _rad, ngl::Real _height);
+    void addCylinder(const std::string & _name, ngl::Real _rad, ngl::Real _height);
+    void addCone(const std::string & _name, ngl::Real _rad, ngl::Real _height);
+
+    btCollisionShape* getShape(const std::string &_name);
+  private :
+    CollisionShape(){}
+    CollisionShape(const CollisionShape &_c)=delete;
+    CollisionShape & operator=(const CollisionShape &_c)=delete;
+
+    std::unordered_map <std::string,std::unique_ptr<btCollisionShape>> m_shapes;
+};
+
+
+
+#endif
